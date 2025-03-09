@@ -51,9 +51,8 @@ $jekyll-config-map : {{ config_map }};
 // --------------------------------------------------
 @import "_custom/custom";
 
-
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
-body {
+body, h1, h2, h3, h4, h5, h6, p {
   font-family: "Pretendard";
 }
 
