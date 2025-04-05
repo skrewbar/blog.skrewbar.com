@@ -57,15 +57,16 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 
 @font-face {
-  font-family: "JetBrainsMonoNL-Medium";
-  src: url(/assets/fonts/JetBrainsMonoNL-Medium.ttf);
+  font-family: "JetBrains Mono";
+  src: url(/assets/fonts/JetBrainsMono-Regular.ttf);
 }
 @font-face {
   font-family: "D2Coding";
   src: url(/assets/fonts/D2Coding.ttc);
 }
 code {
-  font-family: "JetBrainsMonoNL-Medium", "D2Coding";
+  font-size: 13px;
+  font-family: "JetBrains Mono", "D2Coding";
 }
 
 
