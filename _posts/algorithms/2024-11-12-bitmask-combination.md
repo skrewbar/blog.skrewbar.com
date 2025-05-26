@@ -70,6 +70,6 @@ for k in range(1 << 10):
 # 연습문제
 
 [치킨 배달](https://www.acmicpc.net/problem/15686): <span class="gold">골드 V</span>  
-[풀이]({{ base }}/%EB%B0%B1%EC%A4%80/2024/11/12/boj-15686/)
+[풀이]({% post_url /boj/2024-11-12-boj-15686 %})
 
 위 문제는 보통 백트래킹으로 풀지만 비트마스킹으로도 풀 수 있습니다.
