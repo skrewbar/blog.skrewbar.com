@@ -2,7 +2,8 @@
 layout: layout
 ---
 
-{% assign __ = site.data.languages[site.language] %} {% include post.html %}
+{% assign __ = site.data.languages[site.language] %}
+{% include post.html %}
 
 <!-- mathJax -->
 <script type="text/x-mathjax-config">
@@ -19,9 +20,12 @@ layout: layout
 ></script>
 
 <!-- meta data -->
-{% assign author = site.data.authors[page.author] %} {% if page.date_modified %}
-{% assign modified = page.date_modified %} {% else %} {% assign modified =
-page.date %} {% endif %}
+{% assign author = site.data.authors[page.author] %}
+{% if page.date_modified %}
+  {% assign modified = page.date_modified %}
+{% else %}
+  {% assign modified = page.date %}
+{% endif %}
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
