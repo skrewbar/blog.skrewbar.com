@@ -15,6 +15,8 @@ tags:
 먼저, 세그먼트 트리를 모르신다면 [여기서](https://book.acmicpc.net/ds/segment-tree) 보고 오시는 것을 추천합니다. \
 BOJ북이 참 성능이 좋습니다.
 
+<!-- more -->
+
 # 소개
 
 ## 쓸 수 있는 문제

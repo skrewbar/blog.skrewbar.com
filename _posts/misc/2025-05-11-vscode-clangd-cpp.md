@@ -7,6 +7,8 @@ categories:
 
 최근에 clangd라는 아주 빠른 LSP를 발견했는데, Windows에서 GCC 헤더(bits/stdc++.h)를 사용하는 데 어려움을 좀 겪어서, 해결했던 과정을 공유하고자 해요.
 
+<!-- more -->
+
 준비물:
 
 - [Visual Studio Code](https://code.visualstudio.com/)
