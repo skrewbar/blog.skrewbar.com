@@ -1,1 +1,54 @@
 // Custom styles.
+
+.post-body details {
+	margin: 1.2em 0;
+	padding: 0.75em 1em;
+	border: 1px solid #d7dee8;
+	border-radius: 10px;
+	background: #fafbfd;
+}
+
+.post-body details > summary {
+	display: flex;
+	align-items: center;
+	gap: 0.55em;
+	cursor: pointer;
+	font-weight: 600;
+	color: #2a2f36;
+	list-style: none;
+}
+
+.post-body details > summary::-webkit-details-marker {
+	display: none;
+}
+
+.post-body details > summary::before {
+	content: "";
+	flex-shrink: 0;
+	width: 0.45em;
+	height: 0.45em;
+	margin-top: -0.1em;
+	border-right: 2px solid #5f6b7a;
+	border-bottom: 2px solid #5f6b7a;
+	transform: rotate(-45deg);
+	transition: transform 0.18s ease;
+}
+
+.post-body details[open] > summary::before {
+	margin-top: -0.15em;
+	transform: rotate(45deg);
+}
+
+.post-body details > summary:focus-visible {
+	outline: 2px solid #8fa2bd;
+	outline-offset: 3px;
+	border-radius: 4px;
+}
+
+.post-body details > *:not(summary) {
+	margin-top: 0.75em;
+}
+
+.post-body details[open] {
+	background: #f4f7fb;
+}
