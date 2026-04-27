@@ -1,0 +1,14 @@
+{
+  "details": {
+    "scope": "markdown",
+    "prefix": "details",
+    "body": [
+        "<details markdown=\"1\">",
+        "<summary>$1</summary>",
+        "",
+        "$0",
+        "",
+        "</details>"
+    ]
+  },
+}

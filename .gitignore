@@ -12,7 +12,4 @@ Thumbs.db
 
 .prettierignore
 
-.vscode/*
-!.vscode/boj-problem-template.code-snippets
-
 .jekyll-metadata
