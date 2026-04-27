@@ -241,27 +241,27 @@ $l$보다 작았던 수가 $u$보다 커지려면 $u - l$보다 큰 값을 더�
 
 먼저 $w_i$를 기준으로 오름차순 정렬합시다. $w_i \leq w_{i + 1}$이라고 가정하겠습니다.
 
-$\displaystyle \sum\limits_{i = 1}^k w_i \leq l$와 $\displaystyle u \leq \sum\limits_{i = 1}^{k + 1} w_i$를 만족하는 $k$를 찾습니다.
+$\displaystyle \sum_{i = 1}^k w_i \leq l$와 $\displaystyle u \leq \sum_{i = 1}^{k + 1} w_i$를 만족하는 $k$를 찾습니다.
 
 만약 등호가 성립한다면 그것이 해이므로 등호가 성립하지 않는 경우만 생각합시다.
 
-$\displaystyle \sum\limits_{i = 1}^k w_i$에 $w_1$을 빼고 $w_{k + 1}$을 더합시다.
+$\displaystyle \sum_{i = 1}^k w_i$에 $w_1$을 빼고 $w_{k + 1}$을 더합시다.
 
-$w_{k + 1} - w_1 \leq w_{\max} - w_{\min}$이므로 $\displaystyle \sum\limits_{i = 2}^{k + 1} w_i$는 구간 $[l, u]$에 속하거나 $l$보다 작아야 합니다.
+$w_{k + 1} - w_1 \leq w_{\max} - w_{\min}$이므로 $\displaystyle \sum\_{i = 2}^{k + 1} w_i$는 구간 $[l, u]$에 속하거나 $l$보다 작아야 합니다.
 
-다시 $w_2$를 빼고 $w_{k + 2}$를 더합시다. 이를 계속 반복하여 $\displaystyle \sum\limits_{i = n - k + 1}^n w_i$까지 검사합니다. 이중 구간 $[l, u]$에 속하는 것을 발견하면 그것이 해가 됩니다.
+다시 $w_2$를 빼고 $w_{k + 2}$를 더합시다. 이를 계속 반복하여 $\displaystyle \sum\_{i = n - k + 1}^n w_i$까지 검사합니다. 이중 구간 $[l, u]$에 속하는 것을 발견하면 그것이 해가 됩니다.
 
 이 중에서 해가 존재하지 않으면 항상 다른 해가 존재하지 않습니다.
 
-만약 $w_{\min} = w_1 \leq u - l$인 경우 $\displaystyle\sum\limits_{i = 1}^k w_i$와 $\displaystyle \sum\limits_{i = 2}^k w_i$가 $u - l$이하의 차이가 나고 $\displaystyle \sum\limits_{i = 2}^{k + 1} w_i$와 $\displaystyle \sum\limits_{i = 2}^{k + 1} w_i + w_1 = \displaystyle \sum\limits_{i = 1}^{k + 1} w_i$이 $u - l$이하의 차이가 납니다.
+만약 $w_{\min} = w_1 \leq u - l$인 경우 $\displaystyle\sum\_{i = 1}^k w_i$와 $\displaystyle \sum\_{i = 2}^k w_i$가 $u - l$이하의 차이가 나고 $\displaystyle \sum\_{i = 2}^{k + 1} w_i$와 $\displaystyle \sum\_{i = 2}^{k + 1} w_i + w_1 = \displaystyle \sum\_{i = 1}^{k + 1} w_i$이 $u - l$이하의 차이가 납니다.
 
 모두 $u - l$이하의 차이가 나므로 셋 중 하나는 무조건 해여야 합니다.
 
-$\displaystyle \sum\limits_{i = 1}^k w_i < l$이고 $\displaystyle u < \sum\limits_{i = 1}^{k + 1} w_i$이므로 항상 $\displaystyle \sum\limits_{i = 2}^k w_i$가 해가 됩니다.
+$\displaystyle \sum\_{i = 1}^k w_i < l$이고 $\displaystyle u < \sum\_{i = 1}^{k + 1} w_i$이므로 항상 $\displaystyle \sum\_{i = 2}^k w_i$가 해가 됩니다.
 
-따라서 $\displaystyle \sum\limits_{i = n - k + 1}^n w_i$까지 해를 발견하지 못했다는 뜻은 $w_1$이 $u - l$보다 크다는 뜻이 됩니다.
+따라서 $\displaystyle \sum\_{i = n - k + 1}^n w_i$까지 해를 발견하지 못했다는 뜻은 $w_1$이 $u - l$보다 크다는 뜻이 됩니다.
 
-따라서 $\displaystyle \sum\limits_{i = n - k + 1}^n w_i$가 $l$보다 작은 최댓값이 되고, 해가 존재하지 않습니다.
+따라서 $\displaystyle \sum\_{i = n - k + 1}^n w_i$가 $l$보다 작은 최댓값이 되고, 해가 존재하지 않습니다.
 
 시간 복잡도 $O(n\log n)$에 해결할 수 있습니다.
 
